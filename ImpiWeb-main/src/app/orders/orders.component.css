@@ -1,0 +1,81 @@
+*{
+
+  padding: 1;
+  
+ 
+}
+.container{
+  max-height: 100vh;
+  max-width: 100vw;
+}
+h2{
+  margin-left: 20px;
+  text-transform: uppercase;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-style: oblique;
+  font-size: 30px;
+}
+table {
+  width: 100%;
+  margin: 10px 50px 10px 50px;
+  position: relative;
+  margin-left: -100px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(71, 71, 71);
+  border: rgb(209, 0, 0);
+  border-radius: 2px;
+}
+table tr:hover{
+  background-color: rgb(163, 245, 238);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border: rgb(164, 240, 145);
+
+}
+table th{
+  color: rgb(237, 247, 136);
+  background-color: rgb(15, 15, 15);
+  font-weight: 400;
+  font-style: italic;
+}
+table tr{
+ background-color: black;
+  border-color: rgb(248, 156, 156);
+  color: aliceblue;
+}
+.row{
+  margin: 10px 50px 10px 50px;
+  margin-left: 1px;
+  padding: 1px;
+  margin-top: 2px;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(187, 188, 189);
+  
+  width: 90vw;
+
+}
+.row button{
+  color: black;
+  background-color: rgb(2, 140, 145);
+  margin: 10px;
+  border-radius: 10px;
+  border-color: cornflowerblue;
+}
+.row button:hover{
+  color: rgb(235, 211, 211);
+  background-color: rgb(140, 146, 151);
+  border-color: rgb(233, 233, 233);
+}
+.form-group{
+ float:right;
+  padding-right: 50px;
+}
+.form-group:hover{
+  color: cyan;
+}
+.fa-list-alt{
+  height: 20px;
+  size: 40px;
+}

@@ -1,0 +1,51 @@
+.btn{
+    margin: 40px;
+  }
+  .mat-progress-spinner {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .row{
+    background-color: rgb(65, 63, 63);
+  }
+  .container{
+    background-color: rgb(128, 173, 179);
+    color: #000;
+  }
+  table th{
+    background-color: black;
+    color: rgb(214, 173, 112);
+  }
+  .text-center{
+    color: black;
+    
+  }
+  p{
+    font-size: 30px;
+    color: rgb(0, 36, 49);
+    margin-left: 400px;
+    margin-bottom: 20px;
+  }
+  .center-block{
+    height: 5vh;
+  }
+  mat-grid-list{
+    height: 2vh;
+  }
+  .btn-danger{
+    color: #000;
+    background-color: rgb(238, 0, 0);
+  }
+  .btn-success{
+    color: #000;
+    background-color: rgb(0, 112, 0);
+  }
+  .btn-danger:hover{
+    color: rgb(228, 225, 225);
+    background-color: rgb(255, 31, 31);
+  }
+  .btn-success:hover{
+    color: rgb(228, 225, 225);
+    background-color: rgb(80, 255, 74);
+  }
+  

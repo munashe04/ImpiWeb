@@ -1,0 +1,51 @@
+body{
+    font-family: "Raleway", sans-serif;
+    color: rgb(22, 24, 24);
+}
+h1{
+    font-family: "Raleway", sans-serif;
+    color: rgb(244, 252, 129);
+    margin-bottom: 40px;
+    font-size:xx-large;
+   
+   
+}
+
+body{
+    height: 100vh;
+}
+.login{
+  margin-left: 120px;
+  color: #8b85e7;
+  font-size: 20px;
+
+}
+.login button{
+  background-color: black;
+}
+
+.w3-display-middle{
+    margin-top: 100px;
+   width: 300px;
+   height: 300px;
+    margin-left: 300px;
+    border: 3px solid #4287f5;
+    opacity: 100%;
+    background-color: rgb(135, 10, 252);
+  }
+  .w3-display-middle:hover{
+    background-color: rgb(8, 8, 8);
+    cursor: pointer;
+    color: rgb(223, 219, 219);
+    
+  }
+.bgimg {
+  background-image: url(C:\Users\Munashe\Downloads\ImpiWeb-main\back.jpg);
+  height: 100vh;
+  background-position:center;
+  opacity:100%;
+  width: 200vh;
+  background-size:cover;
+  margin-left: -100px;
+  margin-right: -200px;
+}

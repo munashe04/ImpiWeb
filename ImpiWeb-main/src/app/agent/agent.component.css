@@ -1,0 +1,95 @@
+*{
+ 
+  max-height: 100vh;
+ 
+}
+.container{
+  margin-top: 10px;
+  max-height: 100vh;
+  max-width: 100vw;
+  text-decoration: none;
+  
+}
+.row{
+  margin: 10px 50px 10px 50px;
+  
+  padding: 1px;
+  margin-top: 50px;
+  margin-left: 0px;
+  position: relative;
+  display: inline-block;
+  background-color: rgb(163, 163, 163);
+  
+  width: 90vw;
+
+}
+.row button{
+  color: rgb(189, 3, 3);
+  background-color: rgb(82, 90, 78);
+  margin: 10px;
+  border-radius: 10px;
+  border-color: cornflowerblue;
+}
+
+.row button:hover{
+  color: #000;
+  background-color: rgb(145, 13, 197);
+  border-color: rgb(94, 202, 94);
+}
+.form-group{
+  float:right;
+   padding-right: 50px;
+   margin-top: 10px;
+ }
+ h2{
+   color: rgb(141, 134, 134);
+   font-family:fantasy;
+   font-weight: 10;
+   font-size: 40px;
+   margin-left: 20px;
+   
+ }
+
+table {
+  width: 100%;
+  margin: 10px 50px 10px 50px;
+  position:relative;
+  margin-top: 20px;
+  color: rgb(11, 12, 11);
+  background-color: rgb(3, 130, 168);
+  margin-left: 0px;
+}
+table th{
+  color: rgb(253, 255, 254);
+  background-color: rgb(17, 1, 104);
+  font-style: italic;
+  font-weight: 200;
+}
+table td{
+ 
+  font-size:15px;
+  
+}
+table tr{
+  background-color: rgb(87, 166, 177);
+  color: rgb(0, 0, 0);
+}
+table tr:hover{
+  background-color: rgb(163, 247, 146);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+
+.row button{
+  color: rgb(46, 43, 43);
+  font-size: 15px;
+  background-color: rgb(255, 255, 251);
+  margin: 10px;
+  border-color: cornflowerblue;
+}
+.row button:hover{
+  color: #000;
+  background-color: rgb(138, 255, 220);
+  border-color: rgb(101, 139, 245);
+}

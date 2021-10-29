@@ -1,0 +1,42 @@
+
+.btn{
+  margin: 40px;
+}
+.mat-progress-spinner {
+  display: inline-block;
+  vertical-align: middle;
+}
+.row{
+  background-color: rgb(64, 116, 100);
+}
+.container{
+  background-color: rgb(75, 76, 77);
+  
+
+}
+table{
+  margin-left: -15px;
+}
+table th{
+  background-color: black;
+  color: rgb(214, 173, 112);
+}
+.text-center{
+  color: rgb(255, 251, 251);
+}
+p{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+  font-weight: 900;
+  color: rgb(199, 253, 188);
+}
+table td{
+  background-color:rgb(17, 17, 17);
+  color: rgb(199, 255, 209);
+}
+.btn-success:hover{
+  background-color: rgb(0, 153, 0);
+}
+.btn-danger:hover{
+  background-color: rgb(196, 0, 0);
+}

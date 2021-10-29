@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container">
+  <div class="row">
+    <div *ngIf = "alert" class="alert alert-success" role="alert">
+      <h4 class="alert-heading">Agent Approved Successfully!</h4>
+    </div>
+    <div *ngIf = "alertDecline" class="alert alert-danger" role="alert">
+      <strong> Agent has been Deleted Successfully!</strong>
+    </div>
+      <div class="col-xs-12" >
+        <button class="btn btn-success" (click)="backToAgent()"><i class="fa fa-arrow-left "></i> Back</button>
+      </div>
+    </div>
+    <a>
+    
+    <div class="text-center">
+      <h2>  Agent Name:      {{ agent.fullName }}</h2>
+    
+      <h2> Agent ID:           {{ agent.idNumber }} </h2>
+
+      <button class="btn btn-success" (click)= "approveAgent(agent.id)">Approve <i class="fa fa-check"></i></button>
+      <button class="btn btn-danger"(click)  = "deleteAgent(agent.id)">Decline <i class="fa fa-trash"></i></button>
+    
+      
+      <hr>
+      <mat-grid-list cols="2">
+        <mat-grid-tile> <img [src]="agent.selfieImageUrl" (load)="updateImageLoaded1()" height="900px"></mat-grid-tile>
+        <mat-grid-tile> <img [src]="agent.idImageUrl" (load)="updateImageLoaded2()" height="900px"></mat-grid-tile>
+      </mat-grid-list>
+      <div class="center-block"  fxLayoutAlign="center center " style="height:100%" fxFill *ngIf="isImagesLoading">
+        <mat-spinner></mat-spinner>
+      </div>
+    
+    </div>
+    </a>
+    
+    <hr>
+    <p>  Agent Details </p>
+    <div class="container">
+     
+       <table class="table table-striped table-bordered">
+        <thead>
+        <tr>
+          <th>Agent</th>
+          <th>Agent ID Number</th>
+          <th>Agent Number</th>
+          <th>Agent Phone Number</th>
+          <th>Agent Gender</th>
+          <th>Agent Address</th>
+          <th>Agent DOB</th>
+          <th>Agent Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+          <td>{{agent.fullName}} </td>
+          <td>{{agent.idNumber}}</td>
+          <td>{{agent.refMobileNumber}}</td>
+          <td>{{agent.mobileNumber}}</td>
+          <td>{{agent.gender}}</td>
+          <td>{{agent.fullAddress}}</td>
+          <td>{{agent.dateOfBirth}}</td>
+          <td>{{agent.approvalStatus}}</td>
+  
+        </tr>
+        </tbody>
+      </table>
+    
+    </div>
+</div>
+
+  

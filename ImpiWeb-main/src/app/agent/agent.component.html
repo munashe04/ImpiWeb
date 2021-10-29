@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="agent.component.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container">
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      
+      <a href="/home" class="w3-bar-item w3-button w3-padding-large">HOME&nbsp;<i class="fa fa-home" aria-hidden="true"></i></a>
+      <a href="/orders" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ORDER MANAGEMENT&nbsp; <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOG OUT&nbsp; <i class='fa fa-power-off'></i></a>
+  
+      <div class="form-group">
+        
+        <input type="text" class="form-control" placeholder="Search..."
+                style="width:300px" [(ngModel)]="searchTerm" />
+    </div> 
+    </div>
+  </div>
+    
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-success" (click)="getAllAgents()">All Agents</button>
+        <button class="btn btn-success" (click)="getPendingAgents()">Pending Agents&nbsp;<i class="fa fa-spinner fa-pulse"></i></button>
+
+        </div>
+
+        </div>
+        
+        
+      </div>
+      
+    
+    <hr>
+    <h2>Available Agents <i class='fa fa-users' style='font-size:48px;color:rgb(80, 77, 77)'></i>
+      
+    </h2>
+    
+    <div class="center-block"  fxLayoutAlign="center center " style="height:100%" fxFill *ngIf="isLoadingOrders">
+      <mat-spinner></mat-spinner>
+    </div>
+    <div class="container" *ngIf="!isLoadingOrders">
+    <table class="table table-striped table-bordered">
+      <thead>
+      <tr>
+        <th>Agent Number</th>
+        <th>Agent Name</th>
+        <th>Agent ID</th>
+        <th>Address</th>
+        <th>Status</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let agents of dataSource | filter : searchTerm" (click)="onSelect(agents)">
+        <td>{{agents.mobileNumber}}</td>
+        <td>{{agents.fullName}}</td>
+        <td>{{agents.idNumber}}</td>
+        <td>{{agents.fullAddress}}</td>
+        <td>{{agents.approvalStatus}}</td>
+        
+      </tr>
+      </tbody>
+    </table>
+    </div>
+    
+  
+
